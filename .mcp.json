@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mortgage-pricer": {
+      "type": "http",
+      "url": "https://mortgage-pricer-production.up.railway.app/mcp"
+    }
+  }
+}

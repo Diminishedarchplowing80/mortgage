@@ -1,0 +1,45 @@
+PROPRIETARY LICENSE
+
+Copyright (c) 2026 Nexus Digital Group LLC
+
+All rights reserved.
+
+This software and associated documentation files (the "Plugin") are the
+proprietary property of Nexus Digital Group LLC. The technology, source
+code, skill content, and associated intellectual property contained herein
+are owned exclusively by Nexus Digital Group LLC.
+
+"Lendtrain" is a registered trademark of Atlantic Home Mortgage LLC
+(NMLS# 1844873), used under license from Atlantic Home Mortgage LLC.
+Mortgage origination services are provided by Atlantic Home Mortgage LLC
+dba Lendtrain. Equal Housing Opportunity.
+
+Permission is granted to:
+
+  - Install and use this Plugin for mortgage refinance inquiries
+    through Claude Code, the Anthropic plugin directory, and other
+    authorized AI agent marketplaces
+  - Distribute this Plugin through the Anthropic plugin directory
+    and other authorized AI agent marketplaces
+  - Use this Plugin's functionality through AI agents acting on
+    behalf of consumers seeking mortgage refinance information
+
+The following actions are expressly prohibited without prior written
+consent from Nexus Digital Group LLC:
+
+  - Modifying or creating derivative works of the Plugin
+  - Redistributing the Plugin's source files outside of authorized
+    AI agent marketplaces
+  - Forking the Plugin to create competing mortgage products
+    or services
+  - Copying skill content into other plugins, AI systems, or
+    software products
+
+The Plugin connects to proprietary pricing and loan origination services.
+Unauthorized access to these services is prohibited.
+
+THE PLUGIN IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL NEXUS DIGITAL GROUP LLC BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE USE OF THE PLUGIN.
+
+For licensing inquiries: team@lendtrain.com
