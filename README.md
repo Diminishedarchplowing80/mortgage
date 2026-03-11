@@ -6,16 +6,17 @@ Technology by Nexus Digital Group LLC. Mortgage origination by Atlantic Home Mor
 
 ## Install
 
-From the Anthropic plugin directory:
+Add the marketplace and install the plugin:
 
 ```
-/plugin install mortgage@claude-plugin-directory
+/plugin marketplace add lendtrain/mortgage
+/plugin install mortgage@mortgage
 ```
 
-Or install directly from this repo:
+Or install directly from the repo:
 
 ```
-claude plugin add --path .
+/plugin install lendtrain/mortgage
 ```
 
 Then run:

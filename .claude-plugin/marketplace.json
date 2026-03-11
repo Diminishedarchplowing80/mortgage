@@ -1,0 +1,21 @@
+{
+  "name": "mortgage",
+  "owner": {
+    "name": "Lendtrain",
+    "email": "team@lendtrain.com"
+  },
+  "metadata": {
+    "description": "Mortgage refinance quoting, analysis, and application submission for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "mortgage",
+      "source": ".",
+      "description": "Mortgage refinance quoting, analysis, and application submission powered by Lendtrain",
+      "version": "1.1.1",
+      "author": {
+        "name": "Lendtrain"
+      }
+    }
+  ]
+}
